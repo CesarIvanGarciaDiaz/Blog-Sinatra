@@ -1,0 +1,18 @@
+    <h1>TODOS LOS POST</h1>
+    <% @all.each do |x| %>
+    <table style="width:100%">
+      <tr>
+        <th style="width:6%"><center>Id</center></th>
+        <th style="width:15%"><center>Title</center></th>
+        <th  style="width:60%"><center>Description</center></th>
+        <th ><center>Fecha de creacion</center></th>
+      </tr>
+
+      <tr>
+        <td><%=x.id%></td>
+        <td><%=x.title%></td>
+        <td><%=x.description %></td>
+        <td><%=x.created_at%></td>
+      </tr>
+      <%end%>
+    </table>

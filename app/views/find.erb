@@ -1,0 +1,18 @@
+<h1>Post Encontrado</h1>
+<%@find%>
+<table style="width:100%">
+  <tr>
+    <th style="width:6%"><center>Id</center></th>
+    <th style="width:15%"><center>Title</center></th>
+    <th  style="width:60%"><center>Description</center></th>
+    <th ><center>Fecha de creacion</center></th>
+  </tr>
+
+  <tr>
+    <td><%=@find.id%></td>
+    <td><%=@find.title%></td>
+    <td><%=@find.description %></td>
+    <td><%=@find.created_at%></td>
+  </tr>
+
+</table>

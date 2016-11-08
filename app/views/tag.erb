@@ -1,0 +1,36 @@
+<% if @tag %>
+<% if @tag.errors %>
+<%= @tag.errors.full_messages %>
+<% end %>
+<% end %>
+
+<ul>
+<h1>Tag</h1>
+<%@tag%>
+<table style="width:100%">
+  <tr>
+    <th style="width:6%"><center>Id</center></th>
+    <th style="width:15%"><center>Name</center></th>
+  </tr>
+  <tr>
+    <td><%=@tag.id%></td>
+    <td><%=@tag.name%></td>
+  </tr>
+</table>
+<%@nombre%>
+<table style="width:100%">
+  <tr>
+    <th style="width:6%"><center>Id</center></th>
+    <th style="width:15%"><center>Title</center></th>
+    <th  style="width:60%"><center>Description</center></th>
+    <th ><center>Fecha de creacion</center></th>
+  </tr>
+
+  <tr>
+    <td><%=@nombre.id%></td>
+    <td><%=@nombre.title%></td>
+    <td><%=@nombre.description %></td>
+    <td><%=@nombre.created_at%></td>
+  </tr>
+
+</table>
